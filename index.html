@@ -76,7 +76,7 @@
     box-shadow:0 26px 60px rgba(79,209,197,.25);
   }
   .frame{
-    aspect-ratio:4/3;
+    aspect-ratio:3/4;
     border-radius:2px;
     overflow:hidden;
     display:flex;
@@ -85,7 +85,7 @@
     background:linear-gradient(135deg,#20456e,#2f6f7d 50%,#3b4f8a);
   }
   .frame img{width:100%;height:100%;object-fit:cover;display:block}
-  .frame span{color:#cfe6ff;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;opacity:.7}
+  .wide .frame{aspect-ratio:4/3}
   figcaption{
     font-family:Caveat,cursive;
     font-size:1.5rem;
@@ -95,7 +95,7 @@
   }
   .note{
     max-width:44rem;
-    margin:20px auto 0;
+    margin:20px auto 90px;
     padding:38px 30px;
     border:1px solid rgba(106,166,255,.22);
     border-radius:16px;
@@ -111,7 +111,6 @@
   }
   .note p{line-height:1.85;font-weight:300;color:#d6e6ff}
   .sign{font-family:Caveat,cursive;font-size:1.6rem;color:var(--violet);text-align:right;margin-top:1.2em}
-  footer{text-align:center;padding:60px 24px 80px;color:var(--muted);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase}
 </style>
 </head>
 <body>
@@ -123,12 +122,12 @@
 </header>
 
 <section class="album">
-  <figure style="--tilt:-2deg"><div class="frame"><img src="photos/1.jpg" alt="" onerror="this.remove()"><span>photo one</span></div><figcaption>the day we met</figcaption></figure>
-  <figure style="--tilt:1.5deg"><div class="frame"><img src="photos/2.jpg" alt="" onerror="this.remove()"><span>photo two</span></div><figcaption>that night out</figcaption></figure>
-  <figure style="--tilt:-1deg"><div class="frame"><img src="photos/3.jpg" alt="" onerror="this.remove()"><span>photo three</span></div><figcaption>peak chaos</figcaption></figure>
-  <figure style="--tilt:2.5deg"><div class="frame"><img src="photos/4.jpg" alt="" onerror="this.remove()"><span>photo four</span></div><figcaption>the road trip</figcaption></figure>
-  <figure style="--tilt:-2.5deg"><div class="frame"><img src="photos/5.jpg" alt="" onerror="this.remove()"><span>photo five</span></div><figcaption>no context needed</figcaption></figure>
-  <figure style="--tilt:1deg"><div class="frame"><img src="photos/6.jpg" alt="" onerror="this.remove()"><span>photo six</span></div><figcaption>more to come</figcaption></figure>
+  <figure style="--tilt:-2deg"><div class="frame"><img src="photos/1.jpg" alt=""></div><figcaption>the day we met</figcaption></figure>
+  <figure style="--tilt:1.5deg"><div class="frame"><img src="photos/2.jpg" alt=""></div><figcaption>that night out</figcaption></figure>
+  <figure style="--tilt:-1deg"><div class="frame"><img src="photos/3.jpg" alt=""></div><figcaption>peak chaos</figcaption></figure>
+  <figure style="--tilt:2.5deg"><div class="frame"><img src="photos/4.jpg" alt=""></div><figcaption>the road trip</figcaption></figure>
+  <figure style="--tilt:-2.5deg"><div class="frame"><img src="photos/5.jpg" alt=""></div><figcaption>no context needed</figcaption></figure>
+  <figure class="wide" style="--tilt:1deg"><div class="frame"><img src="photos/6.jpg" alt=""></div><figcaption>more to come</figcaption></figure>
 </section>
 
 <section class="note">
@@ -138,8 +137,6 @@
   <p>Here is to another year of stupid plans, long detours, terrible ideas that somehow work out, and photos we will be embarrassed by later. Whatever this year throws at you, back yourself. I already do.</p>
   <div class="sign">Happy birthday, Leon</div>
 </section>
-
-<footer>Made for you</footer>
 
 </body>
 </html>
